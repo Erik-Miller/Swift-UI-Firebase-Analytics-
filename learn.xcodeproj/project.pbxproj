@@ -13,9 +13,16 @@
 		DC49B109236255E800509BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC49B108236255E800509BD7 /* Assets.xcassets */; };
 		DC49B10C236255E800509BD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC49B10B236255E800509BD7 /* Preview Assets.xcassets */; };
 		DC49B10F236255E800509BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC49B10D236255E800509BD7 /* LaunchScreen.storyboard */; };
+		DC49B117236256E100509BD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC49B116236256E100509BD7 /* GoogleService-Info.plist */; };
+		DC49B11D23625BD700509BD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC49B11C23625BD700509BD7 /* LoginView.swift */; };
+		DC49B1232369F4EE00509BD7 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC49B1222369F4EE00509BD7 /* DiscoverView.swift */; };
+		DC49B125236A527500509BD7 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC49B124236A527500509BD7 /* JSONDecoder.swift */; };
+		E6279DFF7A3F175C7E5F6DD5 /* Pods_learn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A6574A5336EFB53A529117 /* Pods_learn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2CE94C108D4D65CE38CCA7 /* Pods-learn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.release.xcconfig"; path = "Pods/Target Support Files/Pods-learn/Pods-learn.release.xcconfig"; sourceTree = "<group>"; };
+		99A6574A5336EFB53A529117 /* Pods_learn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC49B0FF236255E500509BD7 /* learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC49B102236255E500509BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC49B104236255E500509BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		DC49B10B236255E800509BD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC49B10E236255E800509BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC49B110236255E800509BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC49B116236256E100509BD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC49B11C23625BD700509BD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DC49B1222369F4EE00509BD7 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiscoverView.swift; path = /Users/emiller/Projects/learn/learn/DiscoverView.swift; sourceTree = "<absolute>"; };
+		DC49B124236A527500509BD7 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		F609AEA4DC7826F50BDFBE2F /* Pods-learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learn/Pods-learn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6279DFF7A3F175C7E5F6DD5 /* Pods_learn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5307257B20A49DF0DD11CA84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99A6574A5336EFB53A529117 /* Pods_learn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6446CFD474CD4378DE19308A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F609AEA4DC7826F50BDFBE2F /* Pods-learn.debug.xcconfig */,
+				2E2CE94C108D4D65CE38CCA7 /* Pods-learn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC49B0F6236255E500509BD7 = {
 			isa = PBXGroup;
 			children = (
 				DC49B101236255E500509BD7 /* learn */,
 				DC49B100236255E500509BD7 /* Products */,
+				6446CFD474CD4378DE19308A /* Pods */,
+				5307257B20A49DF0DD11CA84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +88,16 @@
 		DC49B101236255E500509BD7 /* learn */ = {
 			isa = PBXGroup;
 			children = (
+				DC49B1222369F4EE00509BD7 /* DiscoverView.swift */,
+				DC49B124236A527500509BD7 /* JSONDecoder.swift */,
 				DC49B102236255E500509BD7 /* AppDelegate.swift */,
 				DC49B104236255E500509BD7 /* SceneDelegate.swift */,
 				DC49B106236255E500509BD7 /* ContentView.swift */,
+				DC49B11C23625BD700509BD7 /* LoginView.swift */,
 				DC49B108236255E800509BD7 /* Assets.xcassets */,
 				DC49B10D236255E800509BD7 /* LaunchScreen.storyboard */,
 				DC49B110236255E800509BD7 /* Info.plist */,
+				DC49B116236256E100509BD7 /* GoogleService-Info.plist */,
 				DC49B10A236255E800509BD7 /* Preview Content */,
 			);
 			path = learn;
@@ -82,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC49B113236255E800509BD7 /* Build configuration list for PBXNativeTarget "learn" */;
 			buildPhases = (
+				B42A62877D222E7FAA2C408B /* [CP] Check Pods Manifest.lock */,
 				DC49B0FB236255E500509BD7 /* Sources */,
 				DC49B0FC236255E500509BD7 /* Frameworks */,
 				DC49B0FD236255E500509BD7 /* Resources */,
+				439349DB9BB5D946987760FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,18 +174,63 @@
 				DC49B10F236255E800509BD7 /* LaunchScreen.storyboard in Resources */,
 				DC49B10C236255E800509BD7 /* Preview Assets.xcassets in Resources */,
 				DC49B109236255E800509BD7 /* Assets.xcassets in Resources */,
+				DC49B117236256E100509BD7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		439349DB9BB5D946987760FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-learn/Pods-learn-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-learn/Pods-learn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B42A62877D222E7FAA2C408B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-learn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC49B0FB236255E500509BD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC49B125236A527500509BD7 /* JSONDecoder.swift in Sources */,
 				DC49B103236255E500509BD7 /* AppDelegate.swift in Sources */,
 				DC49B105236255E500509BD7 /* SceneDelegate.swift in Sources */,
+				DC49B1232369F4EE00509BD7 /* DiscoverView.swift in Sources */,
+				DC49B11D23625BD700509BD7 /* LoginView.swift in Sources */,
 				DC49B107236255E500509BD7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +365,7 @@
 		};
 		DC49B114236255E800509BD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F609AEA4DC7826F50BDFBE2F /* Pods-learn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +386,7 @@
 		};
 		DC49B115236255E800509BD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2CE94C108D4D65CE38CCA7 /* Pods-learn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
